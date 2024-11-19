@@ -1,0 +1,6 @@
+FROM openjdk:8-jdk-slim
+COPY PingPongLozovsky.java /
+RUN javac PingPongLozovsky.java
+EXPOSE 8080
+ENTRYPOINT ["java"]
+CMD ["PingPong"]
